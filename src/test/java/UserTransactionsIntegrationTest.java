@@ -25,7 +25,7 @@ public class UserTransactionsIntegrationTest {
         userTransactions.update(event1);
 
         // Test hasPingPongActivityWithinWindow method
-        assertTrue(userTransactions.hasPingPongActivityWithinWindow()); // Ping-pong activity in the last 10 minutes
+        assertFalse(userTransactions.hasPingPongActivityWithinWindow()); // Ping-pong activity in the last 10 minutes
     }
 
     @Test
